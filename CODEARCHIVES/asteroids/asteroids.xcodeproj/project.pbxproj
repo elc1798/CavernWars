@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F242E2C196DD0C800AFB6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F242E2B196DD0C800AFB6A0 /* Foundation.framework */; };
+		3F242E2E196DD0C800AFB6A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F242E2D196DD0C800AFB6A0 /* CoreGraphics.framework */; };
+		3F242E30196DD0C800AFB6A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F242E2F196DD0C800AFB6A0 /* UIKit.framework */; };
+		3F242E32196DD0C800AFB6A0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F242E31196DD0C800AFB6A0 /* SpriteKit.framework */; };
+		3F242E38196DD0C800AFB6A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F242E36196DD0C800AFB6A0 /* InfoPlist.strings */; };
+		3F242E3A196DD0C800AFB6A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F242E39196DD0C800AFB6A0 /* main.m */; };
+		3F242E3E196DD0C800AFB6A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F242E3D196DD0C800AFB6A0 /* AppDelegate.m */; };
+		3F242E41196DD0C800AFB6A0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F242E3F196DD0C800AFB6A0 /* Main_iPhone.storyboard */; };
+		3F242E44196DD0C800AFB6A0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F242E42196DD0C800AFB6A0 /* Main_iPad.storyboard */; };
+		3F242E47196DD0C800AFB6A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F242E46196DD0C800AFB6A0 /* ViewController.m */; };
+		3F242E4A196DD0C800AFB6A0 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F242E49196DD0C800AFB6A0 /* MyScene.m */; };
+		3F242E4C196DD0C800AFB6A0 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F242E4B196DD0C800AFB6A0 /* Spaceship.png */; };
+		3F242E4E196DD0C800AFB6A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F242E4D196DD0C800AFB6A0 /* Images.xcassets */; };
+		3F242E55196DD0C800AFB6A0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F242E54196DD0C800AFB6A0 /* XCTest.framework */; };
+		3F242E56196DD0C800AFB6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F242E2B196DD0C800AFB6A0 /* Foundation.framework */; };
+		3F242E57196DD0C800AFB6A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F242E2F196DD0C800AFB6A0 /* UIKit.framework */; };
+		3F242E5F196DD0C800AFB6A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F242E5D196DD0C800AFB6A0 /* InfoPlist.strings */; };
+		3F242E61196DD0C800AFB6A0 /* asteroidsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F242E60196DD0C800AFB6A0 /* asteroidsTests.m */; };
+		3F324FD7196ED87F002A8491 /* Spaceship.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F324FD6196ED87F002A8491 /* Spaceship.m */; };
+		3F324FDA196EE2C8002A8491 /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F324FD9196EE2C8002A8491 /* Asteroid.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F242E58196DD0C800AFB6A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F242E20196DD0C800AFB6A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F242E27196DD0C800AFB6A0;
+			remoteInfo = asteroids;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F242E28196DD0C800AFB6A0 /* asteroids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asteroids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F242E2B196DD0C800AFB6A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F242E2D196DD0C800AFB6A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F242E2F196DD0C800AFB6A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F242E31196DD0C800AFB6A0 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3F242E35196DD0C800AFB6A0 /* asteroids-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "asteroids-Info.plist"; sourceTree = "<group>"; };
+		3F242E37196DD0C800AFB6A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F242E39196DD0C800AFB6A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F242E3B196DD0C800AFB6A0 /* asteroids-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "asteroids-Prefix.pch"; sourceTree = "<group>"; };
+		3F242E3C196DD0C800AFB6A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F242E3D196DD0C800AFB6A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F242E40196DD0C800AFB6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3F242E43196DD0C800AFB6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3F242E45196DD0C800AFB6A0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F242E46196DD0C800AFB6A0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F242E48196DD0C800AFB6A0 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		3F242E49196DD0C800AFB6A0 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		3F242E4B196DD0C800AFB6A0 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		3F242E4D196DD0C800AFB6A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F242E53196DD0C800AFB6A0 /* asteroidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = asteroidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F242E54196DD0C800AFB6A0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3F242E5C196DD0C800AFB6A0 /* asteroidsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "asteroidsTests-Info.plist"; sourceTree = "<group>"; };
+		3F242E5E196DD0C800AFB6A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F242E60196DD0C800AFB6A0 /* asteroidsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = asteroidsTests.m; sourceTree = "<group>"; };
+		3F324FD5196ED87F002A8491 /* Spaceship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spaceship.h; sourceTree = "<group>"; };
+		3F324FD6196ED87F002A8491 /* Spaceship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spaceship.m; sourceTree = "<group>"; };
+		3F324FD8196EE2C8002A8491 /* Asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asteroid.h; sourceTree = "<group>"; };
+		3F324FD9196EE2C8002A8491 /* Asteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asteroid.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F242E25196DD0C800AFB6A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F242E2E196DD0C800AFB6A0 /* CoreGraphics.framework in Frameworks */,
+				3F242E30196DD0C800AFB6A0 /* UIKit.framework in Frameworks */,
+				3F242E32196DD0C800AFB6A0 /* SpriteKit.framework in Frameworks */,
+				3F242E2C196DD0C800AFB6A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F242E50196DD0C800AFB6A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F242E55196DD0C800AFB6A0 /* XCTest.framework in Frameworks */,
+				3F242E57196DD0C800AFB6A0 /* UIKit.framework in Frameworks */,
+				3F242E56196DD0C800AFB6A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F242E1F196DD0C800AFB6A0 = {
+			isa = PBXGroup;
+			children = (
+				3F242E33196DD0C800AFB6A0 /* asteroids */,
+				3F242E5A196DD0C800AFB6A0 /* asteroidsTests */,
+				3F242E2A196DD0C800AFB6A0 /* Frameworks */,
+				3F242E29196DD0C800AFB6A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F242E29196DD0C800AFB6A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F242E28196DD0C800AFB6A0 /* asteroids.app */,
+				3F242E53196DD0C800AFB6A0 /* asteroidsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F242E2A196DD0C800AFB6A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F242E2B196DD0C800AFB6A0 /* Foundation.framework */,
+				3F242E2D196DD0C800AFB6A0 /* CoreGraphics.framework */,
+				3F242E2F196DD0C800AFB6A0 /* UIKit.framework */,
+				3F242E31196DD0C800AFB6A0 /* SpriteKit.framework */,
+				3F242E54196DD0C800AFB6A0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F242E33196DD0C800AFB6A0 /* asteroids */ = {
+			isa = PBXGroup;
+			children = (
+				3F242E3C196DD0C800AFB6A0 /* AppDelegate.h */,
+				3F242E3D196DD0C800AFB6A0 /* AppDelegate.m */,
+				3F242E3F196DD0C800AFB6A0 /* Main_iPhone.storyboard */,
+				3F242E42196DD0C800AFB6A0 /* Main_iPad.storyboard */,
+				3F242E45196DD0C800AFB6A0 /* ViewController.h */,
+				3F242E46196DD0C800AFB6A0 /* ViewController.m */,
+				3F242E48196DD0C800AFB6A0 /* MyScene.h */,
+				3F242E49196DD0C800AFB6A0 /* MyScene.m */,
+				3F324FD8196EE2C8002A8491 /* Asteroid.h */,
+				3F324FD9196EE2C8002A8491 /* Asteroid.m */,
+				3F324FD5196ED87F002A8491 /* Spaceship.h */,
+				3F324FD6196ED87F002A8491 /* Spaceship.m */,
+				3F242E4B196DD0C800AFB6A0 /* Spaceship.png */,
+				3F242E4D196DD0C800AFB6A0 /* Images.xcassets */,
+				3F242E34196DD0C800AFB6A0 /* Supporting Files */,
+			);
+			path = asteroids;
+			sourceTree = "<group>";
+		};
+		3F242E34196DD0C800AFB6A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F242E35196DD0C800AFB6A0 /* asteroids-Info.plist */,
+				3F242E36196DD0C800AFB6A0 /* InfoPlist.strings */,
+				3F242E39196DD0C800AFB6A0 /* main.m */,
+				3F242E3B196DD0C800AFB6A0 /* asteroids-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F242E5A196DD0C800AFB6A0 /* asteroidsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F242E60196DD0C800AFB6A0 /* asteroidsTests.m */,
+				3F242E5B196DD0C800AFB6A0 /* Supporting Files */,
+			);
+			path = asteroidsTests;
+			sourceTree = "<group>";
+		};
+		3F242E5B196DD0C800AFB6A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F242E5C196DD0C800AFB6A0 /* asteroidsTests-Info.plist */,
+				3F242E5D196DD0C800AFB6A0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F242E27196DD0C800AFB6A0 /* asteroids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F242E64196DD0C800AFB6A0 /* Build configuration list for PBXNativeTarget "asteroids" */;
+			buildPhases = (
+				3F242E24196DD0C800AFB6A0 /* Sources */,
+				3F242E25196DD0C800AFB6A0 /* Frameworks */,
+				3F242E26196DD0C800AFB6A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = asteroids;
+			productName = asteroids;
+			productReference = 3F242E28196DD0C800AFB6A0 /* asteroids.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F242E52196DD0C800AFB6A0 /* asteroidsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F242E67196DD0C800AFB6A0 /* Build configuration list for PBXNativeTarget "asteroidsTests" */;
+			buildPhases = (
+				3F242E4F196DD0C800AFB6A0 /* Sources */,
+				3F242E50196DD0C800AFB6A0 /* Frameworks */,
+				3F242E51196DD0C800AFB6A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F242E59196DD0C800AFB6A0 /* PBXTargetDependency */,
+			);
+			name = asteroidsTests;
+			productName = asteroidsTests;
+			productReference = 3F242E53196DD0C800AFB6A0 /* asteroidsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F242E20196DD0C800AFB6A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					3F242E52196DD0C800AFB6A0 = {
+						TestTargetID = 3F242E27196DD0C800AFB6A0;
+					};
+				};
+			};
+			buildConfigurationList = 3F242E23196DD0C800AFB6A0 /* Build configuration list for PBXProject "asteroids" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F242E1F196DD0C800AFB6A0;
+			productRefGroup = 3F242E29196DD0C800AFB6A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F242E27196DD0C800AFB6A0 /* asteroids */,
+				3F242E52196DD0C800AFB6A0 /* asteroidsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F242E26196DD0C800AFB6A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F242E4C196DD0C800AFB6A0 /* Spaceship.png in Resources */,
+				3F242E4E196DD0C800AFB6A0 /* Images.xcassets in Resources */,
+				3F242E44196DD0C800AFB6A0 /* Main_iPad.storyboard in Resources */,
+				3F242E41196DD0C800AFB6A0 /* Main_iPhone.storyboard in Resources */,
+				3F242E38196DD0C800AFB6A0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F242E51196DD0C800AFB6A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F242E5F196DD0C800AFB6A0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F242E24196DD0C800AFB6A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F242E4A196DD0C800AFB6A0 /* MyScene.m in Sources */,
+				3F324FD7196ED87F002A8491 /* Spaceship.m in Sources */,
+				3F242E47196DD0C800AFB6A0 /* ViewController.m in Sources */,
+				3F242E3E196DD0C800AFB6A0 /* AppDelegate.m in Sources */,
+				3F324FDA196EE2C8002A8491 /* Asteroid.m in Sources */,
+				3F242E3A196DD0C800AFB6A0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F242E4F196DD0C800AFB6A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F242E61196DD0C800AFB6A0 /* asteroidsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F242E59196DD0C800AFB6A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F242E27196DD0C800AFB6A0 /* asteroids */;
+			targetProxy = 3F242E58196DD0C800AFB6A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F242E36196DD0C800AFB6A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F242E37196DD0C800AFB6A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F242E3F196DD0C800AFB6A0 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F242E40196DD0C800AFB6A0 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3F242E42196DD0C800AFB6A0 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F242E43196DD0C800AFB6A0 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3F242E5D196DD0C800AFB6A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F242E5E196DD0C800AFB6A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F242E62196DD0C800AFB6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F242E63196DD0C800AFB6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F242E65196DD0C800AFB6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "asteroids/asteroids-Prefix.pch";
+				INFOPLIST_FILE = "asteroids/asteroids-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F242E66196DD0C800AFB6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "asteroids/asteroids-Prefix.pch";
+				INFOPLIST_FILE = "asteroids/asteroids-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3F242E68196DD0C800AFB6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/asteroids.app/asteroids";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "asteroids/asteroids-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "asteroidsTests/asteroidsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3F242E69196DD0C800AFB6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/asteroids.app/asteroids";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "asteroids/asteroids-Prefix.pch";
+				INFOPLIST_FILE = "asteroidsTests/asteroidsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F242E23196DD0C800AFB6A0 /* Build configuration list for PBXProject "asteroids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F242E62196DD0C800AFB6A0 /* Debug */,
+				3F242E63196DD0C800AFB6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F242E64196DD0C800AFB6A0 /* Build configuration list for PBXNativeTarget "asteroids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F242E65196DD0C800AFB6A0 /* Debug */,
+				3F242E66196DD0C800AFB6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F242E67196DD0C800AFB6A0 /* Build configuration list for PBXNativeTarget "asteroidsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F242E68196DD0C800AFB6A0 /* Debug */,
+				3F242E69196DD0C800AFB6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F242E20196DD0C800AFB6A0 /* Project object */;
+}

@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F263C851970250700BE9A17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F263C841970250700BE9A17 /* Foundation.framework */; };
+		3F263C871970250700BE9A17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F263C861970250700BE9A17 /* CoreGraphics.framework */; };
+		3F263C891970250700BE9A17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F263C881970250700BE9A17 /* UIKit.framework */; };
+		3F263C8B1970250700BE9A17 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F263C8A1970250700BE9A17 /* SpriteKit.framework */; };
+		3F263C911970250700BE9A17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F263C8F1970250700BE9A17 /* InfoPlist.strings */; };
+		3F263C931970250700BE9A17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F263C921970250700BE9A17 /* main.m */; };
+		3F263C971970250700BE9A17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F263C961970250700BE9A17 /* AppDelegate.m */; };
+		3F263C9A1970250800BE9A17 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F263C981970250800BE9A17 /* Main_iPhone.storyboard */; };
+		3F263C9D1970250800BE9A17 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F263C9B1970250800BE9A17 /* Main_iPad.storyboard */; };
+		3F263CA01970250800BE9A17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F263C9F1970250800BE9A17 /* ViewController.m */; };
+		3F263CA31970250800BE9A17 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F263CA21970250800BE9A17 /* MyScene.m */; };
+		3F263CA51970250800BE9A17 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F263CA41970250800BE9A17 /* Spaceship.png */; };
+		3F263CA71970250800BE9A17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F263CA61970250800BE9A17 /* Images.xcassets */; };
+		3F263CAE1970250800BE9A17 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F263CAD1970250800BE9A17 /* XCTest.framework */; };
+		3F263CAF1970250800BE9A17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F263C841970250700BE9A17 /* Foundation.framework */; };
+		3F263CB01970250800BE9A17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F263C881970250700BE9A17 /* UIKit.framework */; };
+		3F263CB81970250800BE9A17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F263CB61970250800BE9A17 /* InfoPlist.strings */; };
+		3F263CBA1970250800BE9A17 /* CavernWarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F263CB91970250800BE9A17 /* CavernWarsTests.m */; };
+		3F263CC5197029F500BE9A17 /* Units.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F263CC4197029F500BE9A17 /* Units.m */; };
+		3F263CC8197029FF00BE9A17 /* Turrets.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F263CC7197029FF00BE9A17 /* Turrets.m */; };
+		3F847A65197422100020DA6A /* cavernwarsbkgrd.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F847A62197422100020DA6A /* cavernwarsbkgrd.png */; };
+		3F847A66197422100020DA6A /* cavernwarsshield.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F847A63197422100020DA6A /* cavernwarsshield.png */; };
+		3F847A67197422100020DA6A /* cavernwarssabre.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F847A64197422100020DA6A /* cavernwarssabre.png */; };
+		3F847A691974256B0020DA6A /* gloriousmorning2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F847A681974256B0020DA6A /* gloriousmorning2.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F263CB11970250800BE9A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F263C791970250700BE9A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F263C801970250700BE9A17;
+			remoteInfo = CavernWars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F263C811970250700BE9A17 /* CavernWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CavernWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F263C841970250700BE9A17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F263C861970250700BE9A17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F263C881970250700BE9A17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F263C8A1970250700BE9A17 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3F263C8E1970250700BE9A17 /* CavernWars-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CavernWars-Info.plist"; sourceTree = "<group>"; };
+		3F263C901970250700BE9A17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F263C921970250700BE9A17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F263C941970250700BE9A17 /* CavernWars-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CavernWars-Prefix.pch"; sourceTree = "<group>"; };
+		3F263C951970250700BE9A17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F263C961970250700BE9A17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F263C991970250800BE9A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3F263C9C1970250800BE9A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3F263C9E1970250800BE9A17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F263C9F1970250800BE9A17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F263CA11970250800BE9A17 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		3F263CA21970250800BE9A17 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		3F263CA41970250800BE9A17 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		3F263CA61970250800BE9A17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F263CAC1970250800BE9A17 /* CavernWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CavernWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F263CAD1970250800BE9A17 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3F263CB51970250800BE9A17 /* CavernWarsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CavernWarsTests-Info.plist"; sourceTree = "<group>"; };
+		3F263CB71970250800BE9A17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F263CB91970250800BE9A17 /* CavernWarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CavernWarsTests.m; sourceTree = "<group>"; };
+		3F263CC3197029F500BE9A17 /* Units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Units.h; sourceTree = "<group>"; };
+		3F263CC4197029F500BE9A17 /* Units.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Units.m; sourceTree = "<group>"; };
+		3F263CC6197029FF00BE9A17 /* Turrets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Turrets.h; sourceTree = "<group>"; };
+		3F263CC7197029FF00BE9A17 /* Turrets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turrets.m; sourceTree = "<group>"; };
+		3F847A62197422100020DA6A /* cavernwarsbkgrd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cavernwarsbkgrd.png; sourceTree = "<group>"; };
+		3F847A63197422100020DA6A /* cavernwarsshield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cavernwarsshield.png; sourceTree = "<group>"; };
+		3F847A64197422100020DA6A /* cavernwarssabre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cavernwarssabre.png; sourceTree = "<group>"; };
+		3F847A681974256B0020DA6A /* gloriousmorning2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gloriousmorning2.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F263C7E1970250700BE9A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F263C871970250700BE9A17 /* CoreGraphics.framework in Frameworks */,
+				3F263C891970250700BE9A17 /* UIKit.framework in Frameworks */,
+				3F263C8B1970250700BE9A17 /* SpriteKit.framework in Frameworks */,
+				3F263C851970250700BE9A17 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F263CA91970250800BE9A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F263CAE1970250800BE9A17 /* XCTest.framework in Frameworks */,
+				3F263CB01970250800BE9A17 /* UIKit.framework in Frameworks */,
+				3F263CAF1970250800BE9A17 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F263C781970250700BE9A17 = {
+			isa = PBXGroup;
+			children = (
+				3F263C8C1970250700BE9A17 /* CavernWars */,
+				3F263CB31970250800BE9A17 /* CavernWarsTests */,
+				3F263C831970250700BE9A17 /* Frameworks */,
+				3F263C821970250700BE9A17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F263C821970250700BE9A17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F263C811970250700BE9A17 /* CavernWars.app */,
+				3F263CAC1970250800BE9A17 /* CavernWarsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F263C831970250700BE9A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F263C841970250700BE9A17 /* Foundation.framework */,
+				3F263C861970250700BE9A17 /* CoreGraphics.framework */,
+				3F263C881970250700BE9A17 /* UIKit.framework */,
+				3F263C8A1970250700BE9A17 /* SpriteKit.framework */,
+				3F263CAD1970250800BE9A17 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F263C8C1970250700BE9A17 /* CavernWars */ = {
+			isa = PBXGroup;
+			children = (
+				3F263C951970250700BE9A17 /* AppDelegate.h */,
+				3F263C961970250700BE9A17 /* AppDelegate.m */,
+				3F263C981970250800BE9A17 /* Main_iPhone.storyboard */,
+				3F263C9B1970250800BE9A17 /* Main_iPad.storyboard */,
+				3F263C9E1970250800BE9A17 /* ViewController.h */,
+				3F263C9F1970250800BE9A17 /* ViewController.m */,
+				3F263CA11970250800BE9A17 /* MyScene.h */,
+				3F263CA21970250800BE9A17 /* MyScene.m */,
+				3F263CC3197029F500BE9A17 /* Units.h */,
+				3F263CC4197029F500BE9A17 /* Units.m */,
+				3F263CC6197029FF00BE9A17 /* Turrets.h */,
+				3F263CC7197029FF00BE9A17 /* Turrets.m */,
+				3F263CA41970250800BE9A17 /* Spaceship.png */,
+				3F847A62197422100020DA6A /* cavernwarsbkgrd.png */,
+				3F847A63197422100020DA6A /* cavernwarsshield.png */,
+				3F847A64197422100020DA6A /* cavernwarssabre.png */,
+				3F263CA61970250800BE9A17 /* Images.xcassets */,
+				3F263C8D1970250700BE9A17 /* Supporting Files */,
+			);
+			path = CavernWars;
+			sourceTree = "<group>";
+		};
+		3F263C8D1970250700BE9A17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F847A681974256B0020DA6A /* gloriousmorning2.mp3 */,
+				3F263C8E1970250700BE9A17 /* CavernWars-Info.plist */,
+				3F263C8F1970250700BE9A17 /* InfoPlist.strings */,
+				3F263C921970250700BE9A17 /* main.m */,
+				3F263C941970250700BE9A17 /* CavernWars-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F263CB31970250800BE9A17 /* CavernWarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F263CB91970250800BE9A17 /* CavernWarsTests.m */,
+				3F263CB41970250800BE9A17 /* Supporting Files */,
+			);
+			path = CavernWarsTests;
+			sourceTree = "<group>";
+		};
+		3F263CB41970250800BE9A17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F263CB51970250800BE9A17 /* CavernWarsTests-Info.plist */,
+				3F263CB61970250800BE9A17 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F263C801970250700BE9A17 /* CavernWars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F263CBD1970250800BE9A17 /* Build configuration list for PBXNativeTarget "CavernWars" */;
+			buildPhases = (
+				3F263C7D1970250700BE9A17 /* Sources */,
+				3F263C7E1970250700BE9A17 /* Frameworks */,
+				3F263C7F1970250700BE9A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CavernWars;
+			productName = CavernWars;
+			productReference = 3F263C811970250700BE9A17 /* CavernWars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F263CAB1970250800BE9A17 /* CavernWarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F263CC01970250800BE9A17 /* Build configuration list for PBXNativeTarget "CavernWarsTests" */;
+			buildPhases = (
+				3F263CA81970250800BE9A17 /* Sources */,
+				3F263CA91970250800BE9A17 /* Frameworks */,
+				3F263CAA1970250800BE9A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F263CB21970250800BE9A17 /* PBXTargetDependency */,
+			);
+			name = CavernWarsTests;
+			productName = CavernWarsTests;
+			productReference = 3F263CAC1970250800BE9A17 /* CavernWarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F263C791970250700BE9A17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					3F263CAB1970250800BE9A17 = {
+						TestTargetID = 3F263C801970250700BE9A17;
+					};
+				};
+			};
+			buildConfigurationList = 3F263C7C1970250700BE9A17 /* Build configuration list for PBXProject "CavernWars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F263C781970250700BE9A17;
+			productRefGroup = 3F263C821970250700BE9A17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F263C801970250700BE9A17 /* CavernWars */,
+				3F263CAB1970250800BE9A17 /* CavernWarsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F263C7F1970250700BE9A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F847A691974256B0020DA6A /* gloriousmorning2.mp3 in Resources */,
+				3F847A67197422100020DA6A /* cavernwarssabre.png in Resources */,
+				3F847A65197422100020DA6A /* cavernwarsbkgrd.png in Resources */,
+				3F263CA51970250800BE9A17 /* Spaceship.png in Resources */,
+				3F263CA71970250800BE9A17 /* Images.xcassets in Resources */,
+				3F263C9D1970250800BE9A17 /* Main_iPad.storyboard in Resources */,
+				3F263C9A1970250800BE9A17 /* Main_iPhone.storyboard in Resources */,
+				3F263C911970250700BE9A17 /* InfoPlist.strings in Resources */,
+				3F847A66197422100020DA6A /* cavernwarsshield.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F263CAA1970250800BE9A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F263CB81970250800BE9A17 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F263C7D1970250700BE9A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F263CA31970250800BE9A17 /* MyScene.m in Sources */,
+				3F263CC5197029F500BE9A17 /* Units.m in Sources */,
+				3F263CA01970250800BE9A17 /* ViewController.m in Sources */,
+				3F263CC8197029FF00BE9A17 /* Turrets.m in Sources */,
+				3F263C971970250700BE9A17 /* AppDelegate.m in Sources */,
+				3F263C931970250700BE9A17 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F263CA81970250800BE9A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F263CBA1970250800BE9A17 /* CavernWarsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F263CB21970250800BE9A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F263C801970250700BE9A17 /* CavernWars */;
+			targetProxy = 3F263CB11970250800BE9A17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F263C8F1970250700BE9A17 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F263C901970250700BE9A17 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F263C981970250800BE9A17 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F263C991970250800BE9A17 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3F263C9B1970250800BE9A17 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F263C9C1970250800BE9A17 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3F263CB61970250800BE9A17 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F263CB71970250800BE9A17 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F263CBB1970250800BE9A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F263CBC1970250800BE9A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F263CBE1970250800BE9A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CavernWars/CavernWars-Prefix.pch";
+				INFOPLIST_FILE = "CavernWars/CavernWars-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F263CBF1970250800BE9A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CavernWars/CavernWars-Prefix.pch";
+				INFOPLIST_FILE = "CavernWars/CavernWars-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3F263CC11970250800BE9A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CavernWars.app/CavernWars";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CavernWars/CavernWars-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CavernWarsTests/CavernWarsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3F263CC21970250800BE9A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CavernWars.app/CavernWars";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CavernWars/CavernWars-Prefix.pch";
+				INFOPLIST_FILE = "CavernWarsTests/CavernWarsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F263C7C1970250700BE9A17 /* Build configuration list for PBXProject "CavernWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F263CBB1970250800BE9A17 /* Debug */,
+				3F263CBC1970250800BE9A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F263CBD1970250800BE9A17 /* Build configuration list for PBXNativeTarget "CavernWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F263CBE1970250800BE9A17 /* Debug */,
+				3F263CBF1970250800BE9A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F263CC01970250800BE9A17 /* Build configuration list for PBXNativeTarget "CavernWarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F263CC11970250800BE9A17 /* Debug */,
+				3F263CC21970250800BE9A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F263C791970250700BE9A17 /* Project object */;
+}
